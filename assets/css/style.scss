@@ -28,7 +28,9 @@ $section-headings-color: #04587B !default;
   }
 
 }
-
+.page-header .icon {
+  display: none;
+}
 @media screen and (max-width: 600px) {
   .page-header a:not(:first-child) {display: none;}
   .page-header a.icon {
@@ -39,6 +41,11 @@ $section-headings-color: #04587B !default;
 
 @media screen and (max-width: 600px) {
   .page-header.responsive {position: relative;}
+  .page-header.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
   .page-header.responsive a {
     float: none;
     display: block;
