@@ -1,0 +1,49 @@
+---
+---
+
+// Headers
+$header-bg-color: #04587B !default;
+$header-bg-color-secondary: #155799 !default;
+
+// Text
+$section-headings-color: #04587B !default;
+
+
+@import 'jekyll-theme-cayman';
+
+.page-header {
+  height: 450px; //450px if buttons, 350px if no buttons
+  //color: black;
+  background-position: center center;
+  background-size: cover;
+  background-image: url('https://eoimages.gsfc.nasa.gov/images/imagerecords/90000/90008/asia_vir_2016.jpg');
+  .project-tagline
+  {
+    font-weight: 600;
+    font-size: 22px;
+    max-width: 600px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+}
+.custom-github-button{
+  //color:black;
+  border:2px solid white;
+}
+
+html, body {
+    height:100%;
+    width:100%;
+    margin:0;
+}
+
+.h_iframe iframe {
+    width:100%;
+    height:1142px;
+}
+.h_iframe {
+    height: 1142px;
+    width:100%;
+}
