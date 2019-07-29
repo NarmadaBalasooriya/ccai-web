@@ -24,13 +24,16 @@
     <script>
         clicked= true;
         $(document).ready(function(){
-          $(".custom-github-button").click(function(event){
+          $(".custom-github-button").mouseup(function(event){
             if(this.id){
               var btn_id = '#' + this.id;
               $(".custom-github-button").css({"background-color":"transparent", "color":"white"});
-              $(btn_id).css({"background-color":"white", "color":"black", "border":"2px solid yellow"});
+              $(btn_id).css({"background-color":"white", "color":"black"});
               clicked  = false;
             } 
+            if(this.id == "btn3"){
+              $(".custom-github-button").css({"background-color":"transparent", "color":"white"});
+            }
           });
         });
      </script>
