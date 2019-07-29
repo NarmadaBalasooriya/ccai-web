@@ -24,13 +24,11 @@
     <script>
         clicked= true;
         $(document).ready(function(){
-          $(".btn").click(function(event){
+          $(".custom-github-button").click(function(event){
             if(this.id){
               var btn_id = '#' + this.id;
-              alert(btn_id);
-              alert(typeof(btn_id));
               $(".custom-github-button").css({"background-color":"transparent", "color":"white"});
-              $(btn_id).css({"background-color":"white", "color":"black"});
+              $(btn_id).css({"background-color":"white", "color":"black", "border":"2px solid yellow"});
               clicked  = false;
             } 
           });
